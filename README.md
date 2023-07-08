@@ -13,7 +13,7 @@ Apps for KitchenWindows on https://kitchenjs.org/
 
 MIT License
 
-Copyright (c) 2023 Kitchen JS
+Copyright (c) 2023 Kitchen JS - https://kitchenjs.org/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
