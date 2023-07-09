@@ -10,7 +10,7 @@ class DataTableApp extends WindowTemplate
 
         let appContent = `<div class="kw-mt-6 kw-row kw-align-content-center kw-align-items-center kw-text-center kw-m-auto">
             <div class="kw-items-center kw-content-center kw-text-center col-12">
-                
+                Will be here
             </div>
         </div>
         `;
