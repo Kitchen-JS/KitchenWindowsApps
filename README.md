@@ -6,6 +6,9 @@ Apps for KitchenWindows on https://kitchenjs.org/
 ### DataTable
 [KitchenJS DataTable](DataTable/)
 
+### LeafletMap
+[Leaflet Map](LeafletMap/)
+
 
 
 
