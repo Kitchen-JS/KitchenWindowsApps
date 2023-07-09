@@ -20,26 +20,26 @@ class DataTableApp extends WindowTemplate
 
         // windows options, REQUIRED
         this.initOptions = {
-            body: this.container, //should always be the container you created above
-            inject: ['content/js/apps/rfidScan.js', '/content/css/apps/rfidScan.css'],
-            roles: [], //String Array of Roles, OVERWRITTEN BY DB, pipe delimited "|"
-            snapping: true, // makes window snap to grid positions
+            body: this.container,
+            inject: ['https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/DataTable/DataTableApp.js', 'https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/components/clsDataTable.js', 'https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/components/clsDataTable.css'],
+            roles: [],
+            snapping: true, 
             draggable:true,
             shadows:true,
-            resizeable: false, // enables/disables dragging corners of window to resize (not grid positions)
+            resizeable: true,
             position: ["middle", "middle"],
             width: "100%",
             height: "100%",
-            locked: true, //Have to pick a grid - snap locked to grid (does NOT stop user from dragging)
-            id: this.id, //in template base class, should always be a random ID to prevent overlaps
+            locked: true,
+            id: this.id,
             Icon: "pfi-rfid",
             IconColor: '#21dbd2',
             IconBkgColor:"black",
-            //title: "Icons Package",
+            title: "DataTable Demo",
             minimize:true,
             maximize:true,
-            ClassFile: "content/js/apps/rfidScan.js",
-            ClassName: "rfidScan",
+            ClassFile: "https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/DataTable/DataTableApp.js",
+            ClassName: "DataTableApp",
             onClose: () =>
             {
                 //GlobalWindowManager.removeWindow(this.scrollNotes.id);
