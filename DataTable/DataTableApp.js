@@ -20,7 +20,7 @@ class DataTableApp extends WindowTemplate
         // windows options, REQUIRED
         this.initOptions = {
             body: this.container,
-            inject: ['util/WindowTemplate.js', 'https://cdn.jsdelivr.net/gh/Kitchen-JS/KitchenWindowsApps/main/DataTable/DataTableApp.js', 'https://cdn.jsdelivr.net/gh/Kitchen-JS/KitchenWindowsApps/main/components/clsDataTable.js', 'https://cdn.jsdelivr.net/gh/Kitchen-JS/KitchenWindowsApps/main/components/clsDataTable.css'],
+            inject: ['/util/WindowTemplate.js', 'https://cdn.jsdelivr.net/gh/Kitchen-JS/KitchenWindowsApps/DataTable/DataTableApp.js', 'https://cdn.jsdelivr.net/gh/Kitchen-JS/KitchenWindowsApps/components/clsDataTable.js', 'https://cdn.jsdelivr.net/gh/Kitchen-JS/KitchenWindowsApps/components/clsDataTable.css'],
             roles: [],
             snapping: true, 
             draggable:true,
@@ -37,7 +37,7 @@ class DataTableApp extends WindowTemplate
             title: "DataTable Demo",
             minimize:true,
             maximize:true,
-            ClassFile: "https://cdn.jsdelivr.net/gh/Kitchen-JS/KitchenWindowsApps/main/DataTable/DataTableApp.js",
+            ClassFile: "https://cdn.jsdelivr.net/gh/Kitchen-JS/KitchenWindowsApps/DataTable/DataTableApp.js",
             ClassName: "DataTableApp",
             onClose: () =>
             {
