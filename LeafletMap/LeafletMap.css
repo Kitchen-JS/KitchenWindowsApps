@@ -1,0 +1,112 @@
+.leaflet-legend
+{
+    color: #000;
+}
+
+.loadingCover
+{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    z-index: 9000;
+    opacity: .6;
+}
+.loadingCover h1
+{
+    margin-top: 10rem;
+}
+
+
+
+
+.leaflet-control-layers-toggle 
+{
+	background-image: url(../../img/layers.png) !important;
+}
+.leaflet-retina .leaflet-control-layers-toggle 
+{
+	background-image: url(../../img/layers-2x.png) !important;
+}
+.leaflet-default-icon-path 
+{
+	background-image: url(../../img/marker-icon.png) !important;
+}
+
+.leaflet-container
+{
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.leaflet-control-zoom
+{
+    margin-top: 25px !important;
+}
+
+/* .dark  */
+.leaflet-container
+{
+    background-color: transparent;
+}
+.leaflet-container .MapItemColor
+{
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PgoKPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDYuOTkxcHgiIGhlaWdodD0iNDYuOTlweCIgdmlld0JveD0iMCAwIDQ2Ljk5MSA0Ni45OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDYuOTkxIDQ2Ljk5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTIyLjA4MiwyLjYxYy0zLjc0LDAtNy41OTgsMC41OTItMTEuNDY1LDEuNzZDOS41MDMsNC43MDYsNi4xMTUsNS43Myw0Ljg3Nyw5LjA4MmMtMS4yMjIsMy4zMTIsMC41MzYsNi4wNTEsMS44MTksOC4wNTIKCQljMC43MzIsMS4xNDIsMS41NjMsMi40MzYsMS41NjMsMy4zMzdjMCwxLjUyMi0yLjMwMSw0LjY4LTMuODI0LDYuNzdjLTIuNzcxLDMuODA0LTUuOTE0LDguMTEzLTMuNjcyLDEyLjUyMwoJCWMyLjA4MSw0LjA5Miw3LjEzMiw0LjYxNSwxMS4yOTksNC42MTVjMTguMjgyLDAsMzQuOTI4LTExLjA0OCwzNC45MjgtMjMuMTc5QzQ2Ljk5LDEyLjI2MSwzNy40NjksMi42MSwyMi4wODIsMi42MXogTTE2LjUsMzQuMTA5CgkJYy0wLjAyNywyLjE5NC0xLjgwOSwzLjk2Ny00LjAxLDMuOTY3Yy0yLjIxNywwLTQuMDE0LTEuNzk4LTQuMDE0LTQuMDE1YzAtMi4yMTksMS43OTctNC4wMTcsNC4wMTQtNC4wMTcKCQljMC42ODIsMCwxLjMxNCwwLjE4OCwxLjg3NywwLjQ4NmMxLjI2NiwwLjY3NSwyLjEzNywxLjk5MSwyLjEzNywzLjUyNkMxNi41MDMsMzQuMDc4LDE2LjUsMzQuMDk1LDE2LjUsMzQuMTA5eiBNMTcuMDEsMTUuMDgyCgkJYy0wLjg0OC0wLjczNi0xLjM5NS0xLjgwOS0xLjM5NS0zLjAyYzAtMi4yMTgsMS43OTgtNC4wMTUsNC4wMTUtNC4wMTVjMi4yMTgsMCw0LjAxNSwxLjc5Nyw0LjAxNSw0LjAxNQoJCWMwLDAuMjA1LTAuMDMxLDAuNDAxLTAuMDYxLDAuNTk5Yy0wLjI5MSwxLjkzMS0xLjk0MSwzLjQxNi0zLjk1NCwzLjQxNkMxOC42MjMsMTYuMDc3LDE3LjcxNSwxNS42OTMsMTcuMDEsMTUuMDgyeiBNMjQuNjMsMzUuMDc2CgkJYy0xLjQyNCwwLTIuNjY4LTAuNzQ2LTMuMzgxLTEuODY0Yy0wLjM5Ni0wLjYyMy0wLjYzNS0xLjM1Ny0wLjYzNS0yLjE1YzAtMi4yMTcsMS43OTktNC4wMTUsNC4wMTgtNC4wMTUKCQljMS45NzUsMCwzLjYwNywxLjQzMSwzLjk0MSwzLjMxYzAuMDQxLDAuMjMsMC4wNywwLjQ2NiwwLjA3LDAuNzA1QzI4LjY0NCwzMy4yNzgsMjYuODQ5LDM1LjA3NiwyNC42MywzNS4wNzZ6IE0yNy40ODYsMTMuMjQ0CgkJYy0wLjAyMS0wLjE3MS0wLjA1Mi0wLjMzOS0wLjA1Mi0wLjUxNmMwLTEuODU1LDEuMjY1LTMuNDAxLDIuOTc1LTMuODYxYzAuMzMzLTAuMDksMC42NzgtMC4xNTMsMS4wNC0wLjE1MwoJCWMxLjU3NSwwLDIuOTI1LDAuOTE2LDMuNTgyLDIuMjM3YzAuMjcsMC41MzgsMC40MzIsMS4xMzYsMC40MzIsMS43NzdjMCwxLjM4Ny0wLjcwMSwyLjYwOS0xLjc3MSwzLjMzCgkJYy0wLjY0MSwwLjQzMy0xLjQxMiwwLjY4NS0yLjI0MiwwLjY4NUMyOS40MDgsMTYuNzQzLDI3Ljc0MiwxNS4yMTUsMjcuNDg2LDEzLjI0NHogTTMzLjc0LDI4Ljc0MwoJCWMtMC42NzYsMC0xLjMwNS0wLjE4NC0xLjg2My0wLjQ3OWMtMS4yNzEtMC42NzUtMi4xNDgtMS45OTYtMi4xNDgtMy41MzVjMC0yLjIxOCwxLjc5Ny00LjAxNyw0LjAxNC00LjAxNwoJCWMxLjI1OCwwLDIuMzY2LDAuNTksMy4xMDQsMS40OTRjMC41NjIsMC42OSwwLjkxNCwxLjU2MiwwLjkxNCwyLjUyMUMzNy43NTUsMjYuOTQ1LDM1Ljk1OCwyOC43NDMsMzMuNzQsMjguNzQzeiIvPgo8L2c+Cjwvc3ZnPg==);
+}
+
+.mapHorizontalNav
+{
+    position: absolute;
+    bottom: 1rem;
+    left: 5%;
+    width: 90%;
+    height: 4rem; 
+    background-color: rgba(0, 0, 0, 0.6);   
+    border: .15rem solid #5e5e5e;
+    z-index: 9000;
+    overflow: hidden;
+}
+
+.mapHorizontalNav canvas
+{
+    position: relative;
+    z-index: 9990;
+    width: 100%;
+    max-height: 100%;
+    transform: none !important;
+    pointer-events: none;
+}
+
+.mapHorizontalNav .viewFinder
+{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    border: 1px solid #adadad;
+    background-color: rgba(205, 205, 205, 0.18);
+    cursor: grab;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.mapHorizontalNav .viewFinder i
+{
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1rem;
+    font-size: 1rem;
+    position: relative;
+    top: calc(50% - .85rem) !important;
+}

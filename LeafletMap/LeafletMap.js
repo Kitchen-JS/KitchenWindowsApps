@@ -12,7 +12,7 @@ class LeafletMap extends WindowTemplate
         this.ctx;
 
         this.container = document.createElement('div');
-        this.container.classList.add("d-flex", "align-items-center", "justify-content-around", "flex-wrap", "mt-0", "scrollMap");
+        this.container.classList.add("d-flex", "align-items-center", "justify-content-around", "flex-wrap", "mt-0");
 
         let newMap = document.createElement('div');
         newMap.id = this.mapID;
@@ -34,10 +34,7 @@ class LeafletMap extends WindowTemplate
         // windows options, REQUIRED
         this.initOptions = {
             body: this.container, //should always be the container you created above
-            inject: ['content/js/apps/WindowTemplate.js', 'content/css/apps/HiveMap.css'],
-            //'../css/apps/ScrollMap.css'
-            //'/content/js/leaflet.legend.js', '/content/css/leaflet.legend.css',
-            //inject: [],
+            inject: ['content/js/apps/WindowTemplate.js', 'https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/LeafletMap/LeafletMap.js', 'https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/LeafletMap/leaflet.js', 'https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/LeafletMap/leaflet.map', 'https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/LeafletMap/leaflet.css', 'https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/LeafletMap/LeafletMap.css'],
             roles: [], //String Array of Roles, OVERWRITTEN B21323000000000000000000000000000000Y DB, pipe delimited "|"
             snapping: true, // makes window snap to grid positions
             draggable:true,
@@ -52,12 +49,12 @@ class LeafletMap extends WindowTemplate
             locked: true, //Have to pick a grid - snap locked to grid (does NOT stop user from dragging)
             id: this.id, //in template base class, should always be a random ID to prevent overlaps
             Icon: "pfi-map",
-            IconColor: "gold",
-            title: "Beekeeper Map",
+            IconColor: "#000",
+            title: "Leaflet Map",
             minimize:true,
             maximize:true,
-            ClassFile: "content/js/apps/HiveMap.js",
-            ClassName: "HiveMap",
+            ClassFile: "https://raw.githubusercontent.com/Kitchen-JS/KitchenWindowsApps/main/LeafletMap/LeafletMap.js",
+            ClassName: "LeafletMap",
             onClose: () =>
             {
                 //GlobalWindowManager.removeWindow(this.scrollNotes.id);
